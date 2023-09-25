@@ -17,12 +17,14 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         EnemyLife enemy = collision.GetComponent<EnemyLife>();
+        
         Debug.Log(collision.gameObject.name);
-        if (enemy != null)              //add code for tag comparison so that not collide with health
+        if (collision.gameObject.CompareTag("Enemy") )
         {            
             enemy.damage(damageIntensity);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
+        
     }
 
 }

@@ -125,6 +125,11 @@ public class PlayerMovement : MonoBehaviour
         {
             isRigid = true;
             bc.enabled = true;
+
+            //un-crouch the player when passed through platform.
+            crouchHandle(false);
+            isCrouched = false;
+            anim.SetInteger("PlayerState", (int)Playerstate.idle);
         }
     }
 

@@ -61,8 +61,10 @@
     <Compile Include="Assets\Scripts\BulletScript.cs" />
     <Compile Include="Assets\Scripts\ItemCollect.cs" />
     <Compile Include="Assets\Scripts\MainCameraController.cs" />
+    <Compile Include="Assets\Scripts\EnemyFire.cs" />
     <Compile Include="Assets\Scripts\FireBullet.cs" />
     <Compile Include="Assets\Scripts\EnemyLife.cs" />
+    <Compile Include="Assets\Scripts\EnemyBulletScript.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
   </ItemGroup>
   <ItemGroup>
