@@ -14,8 +14,8 @@ TagManager:
   - Water
   - UI
   - Terrain
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 
@@ -51,4 +51,13 @@ TagManager:
     locked: 0
   - name: Playground
     uniqueID: 1176874243
+    locked: 0
+  - name: Enemy
+    uniqueID: 140579485
+    locked: 0
+  - name: Player
+    uniqueID: 1120378949
+    locked: 0
+  - name: Rifle
+    uniqueID: 3808492821
     locked: 0
