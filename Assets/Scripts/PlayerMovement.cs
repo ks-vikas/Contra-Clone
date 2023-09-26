@@ -8,7 +8,6 @@ public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    private SpriteRenderer sr;
     private BoxCollider2D bc;
     
     [SerializeField] private LayerMask Ground;      //"Terrain" Layer is used to detect Ground which is passed as serial input
@@ -30,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
         bc = GetComponent<BoxCollider2D>();
     }
 
@@ -81,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             if (facingLeft == false)
             {
                 facingLeft = true;
+                anim.SetBool("facingLeft", true);
                 flipDir();
             }
         }
@@ -90,6 +89,7 @@ public class PlayerMovement : MonoBehaviour
             if (facingLeft == true)
             {
                 facingLeft = false;
+                anim.SetBool("facingLeft", false);
                 flipDir();
             }
         }
