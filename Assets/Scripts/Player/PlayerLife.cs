@@ -9,6 +9,7 @@ public class PlayerLife : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer sr;
+    private BoxCollider2D bc;
 
     [HideInInspector] internal float playerHealth = 100f;
 
@@ -17,6 +18,7 @@ public class PlayerLife : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -76,6 +78,7 @@ public class PlayerLife : MonoBehaviour
 
         //disable player movement controls when die.
         GetComponent<PlayerMovement>().enabled = false;
+        bc.enabled = false;
     }
 
     private void addHealth(float value)

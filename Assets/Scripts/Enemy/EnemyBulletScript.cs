@@ -29,7 +29,6 @@ public class EnemyBulletScript : MonoBehaviour
         Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player Died");
             Destroy(gameObject);
         }
 
