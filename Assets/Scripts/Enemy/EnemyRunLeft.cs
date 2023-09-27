@@ -17,6 +17,6 @@ public class EnemyRunLeft : MonoBehaviour
 
     void Update()
     {
-        rb.velocity = new Vector2(-speed, rb.velocity.y);
+        rb.velocity = new Vector2(speed, rb.velocity.y);
     }
 }

@@ -19,10 +19,11 @@ public class SpawnerEnemy : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        /* player = GameObject.FindGameObjectWithTag("Player");*/
+        StartCoroutine(SpawnEnemy());
     }
 
-    private void Update()
+/*    private void Update()
     {
         playerPosX = player.transform.position.x;
         spawnerPosX = transform.position.x;
@@ -32,7 +33,7 @@ public class SpawnerEnemy : MonoBehaviour
             isSpawned = true;
             StartCoroutine(SpawnEnemy());
         }
-    }
+    }*/
     IEnumerator SpawnEnemy()
     {
         
@@ -47,7 +48,7 @@ public class SpawnerEnemy : MonoBehaviour
             if (randSide == 0)
             { //left side 
                 spawnedEnemy.transform.position = leftPosition.position;
-                spawnedEnemy.GetComponent<EnemyRunLeft>().speed = Random.Range(4, 10);
+                spawnedEnemy.GetComponent<EnemyRunLeft>().speed = -Random.Range(4, 10);
                 
 
             }
@@ -55,7 +56,7 @@ public class SpawnerEnemy : MonoBehaviour
             {
                 //right side
                 spawnedEnemy.transform.position = rightPosition.position;
-                spawnedEnemy.GetComponent<EnemyRunLeft>().speed = -Random.Range(4, 10);
+                spawnedEnemy.GetComponent<EnemyRunLeft>().speed = Random.Range(4, 10);
                 spawnedEnemy.transform.localScale = new Vector3(-5f, 5f, 5f);
 
             }

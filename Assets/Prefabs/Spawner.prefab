@@ -56,7 +56,7 @@ Transform:
   m_GameObject: {fileID: 1880320501268783811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -161.7, y: 6, z: 0}
+  m_LocalPosition: {x: -143.98, y: 6, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -109,13 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesReference:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1048370553221913442, guid: c6b56366e3c439c4cbf2168e00fa76d0, type: 3}
   leftPosition: {fileID: 808398069324699809}
   rightPosition: {fileID: 6773299285211397150}
   numberOfEnemies: 5
