@@ -57,7 +57,7 @@ public class SpawnerEnemy : MonoBehaviour
                 //right side
                 spawnedEnemy.transform.position = rightPosition.position;
                 spawnedEnemy.GetComponent<EnemyRunLeft>().speed = Random.Range(4, 10);
-                spawnedEnemy.transform.localScale = new Vector3(-5f, 5f, 5f);
+                spawnedEnemy.transform.localScale = new Vector3(-spawnedEnemy.transform.localScale.x, spawnedEnemy.transform.localScale.y, spawnedEnemy.transform.localScale.z);
 
             }
         }
