@@ -3,16 +3,20 @@ using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
-    [SerializeField] private Health playerHealth;
+    [SerializeField] GameObject player;
+    private float health;
     [SerializeField] private Image totalhealthBar;
     [SerializeField] private Image currenthealthBar;
 
     private void Start()
     {
-        totalhealthBar.fillAmount = playerHealth.currentHealth / 10;
+        health = player.GetComponent<PlayerLife>().playerHealth;
+        totalhealthBar.fillAmount = 1;
+        Debug.Log(health);
     }
     private void Update()
     {
-        currenthealthBar.fillAmount = playerHealth.currentHealth / 10;
+        health = player.GetComponent<PlayerLife>().playerHealth;
+        currenthealthBar.fillAmount = health / 100;
     }
 }
