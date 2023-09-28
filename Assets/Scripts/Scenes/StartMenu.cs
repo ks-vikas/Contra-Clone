@@ -23,6 +23,7 @@ public class StartMenu : MonoBehaviour
     //quit the application by pressing the quit button
     public void QuitPlay()
     {
+        Debug.Log("Quit Application"); 
         Application.Quit();
     }
 }
