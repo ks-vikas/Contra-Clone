@@ -10,9 +10,16 @@ public class FireBullet : MonoBehaviour
 
         void Update()
     {
+        //fire single bullet
         if(Input.GetButtonDown("Fire1"))
         {
            Instantiate(bullet, fireSource.position, fireSource.rotation);
+        }
+
+        //fire in burst mode 
+        if (Input.GetButton("Fire2"))
+        {
+            Instantiate(bullet, fireSource.position, fireSource.rotation);
         }
     }
 }
