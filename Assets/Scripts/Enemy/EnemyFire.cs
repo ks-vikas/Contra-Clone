@@ -6,10 +6,14 @@ public class EnemyFire : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform fireSource;
-    [SerializeField] private GameObject player;
+    private GameObject player;
 
     private float timer;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
         float distance = Vector2.Distance(transform.position, player.transform.position);
