@@ -52,11 +52,6 @@ public class PlayerLife : MonoBehaviour
 
     }
 
-    IEnumerator wait(float time)
-    {
-        yield return new WaitForSeconds(Time.deltaTime * time);
-    }
-
     private void reduceHealth(float reduce)
     {
         decreaseHealth(reduce);
