@@ -18,7 +18,7 @@ public class BulletScript : MonoBehaviour
     {
         EnemyLife enemy = collision.GetComponent<EnemyLife>();
         
-        Debug.Log(collision.gameObject.name);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Enemy") )
         {            
             enemy.damage(damageIntensity);

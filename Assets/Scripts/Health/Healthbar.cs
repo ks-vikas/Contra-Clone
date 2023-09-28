@@ -12,7 +12,6 @@ public class Healthbar : MonoBehaviour
     {
         health = player.GetComponent<PlayerLife>().playerHealth;
         totalhealthBar.fillAmount = 1;
-        Debug.Log(health);
     }
     private void Update()
     {

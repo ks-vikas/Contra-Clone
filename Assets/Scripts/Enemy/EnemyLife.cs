@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EnemyLife : MonoBehaviour
 {
-    [SerializeField] private float health = 100f;
+    [SerializeField] private float health;
     private Animator anim;
 
     private void Start()

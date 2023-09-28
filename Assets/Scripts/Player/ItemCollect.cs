@@ -8,10 +8,13 @@ public class ItemCollect : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Health") )
+
+        // This script is not in use
+
+        /*if (collision.gameObject.CompareTag("Health") )
         {
             
             Destroy( collision.gameObject );
-        }
+        }*/
     }
 }
