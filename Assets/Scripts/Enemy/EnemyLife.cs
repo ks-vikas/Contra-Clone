@@ -25,6 +25,8 @@ public class EnemyLife : MonoBehaviour
 
     private void destroyObject()
     {
+        // This function is called by event in enemy_die animation
+
         Destroy(gameObject);
     }
 }
