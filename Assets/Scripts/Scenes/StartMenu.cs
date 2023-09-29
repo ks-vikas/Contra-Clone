@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {   
     //load next scene after the startmenu in build settings
-    public void StartMenu() 
+    public void StartMenuButton() 
     {
         SceneManager.LoadScene("Menu");
     }
