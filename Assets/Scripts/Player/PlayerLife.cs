@@ -97,9 +97,6 @@ public class PlayerLife : MonoBehaviour
             rb.bodyType = RigidbodyType2D.Dynamic;
         }
 
-        
-        
-        
         //Remove rifle from Player
         GameObject originalGameObject = GameObject.Find("Player");
         GameObject rifle = originalGameObject.transform.GetChild(0).gameObject;
@@ -126,4 +123,11 @@ public class PlayerLife : MonoBehaviour
     {
         playerHealth = Mathf.Clamp(playerHealth - value, 0, 100f); // collected positive health.
     }
+
+    private void playerRespawnedPositionAdjust()
+    {
+        transform.position = new Vector2(transform.position.x, 7.5f);
+        playerHealth = 100f;
+    }
+
 }

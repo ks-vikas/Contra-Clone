@@ -28,7 +28,7 @@ public class SpawnerEnemy : MonoBehaviour
     {
         playerPosX = player.transform.position.x;
         spawnerPosX = gameObject.transform.position.x;
-        Debug.Log(spawnerPosX);
+        //Debug.Log(spawnerPosX);
 
         if (!isSpawned && (spawnerPosX - playerPosX < 25f) && (playerPosX < spawnerPosX))
         {
