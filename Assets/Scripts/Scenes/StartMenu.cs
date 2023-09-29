@@ -18,11 +18,11 @@ public class StartMenu : MonoBehaviour
     }
     public void StartPlay2()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        SceneManager.LoadScene("Level2");
     }
     public void StartPlay3()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        SceneManager.LoadScene("Level3");
     }
     //quit the application by pressing the quit button
     public void QuitPlay()

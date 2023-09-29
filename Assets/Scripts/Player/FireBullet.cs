@@ -11,7 +11,6 @@ public class FireBullet : MonoBehaviour
 
         void Update()
     {
-        Debug.Log("bullet "+currentBullet);
         //fire single bullet
         if (Input.GetButtonDown("Fire1"))
         {

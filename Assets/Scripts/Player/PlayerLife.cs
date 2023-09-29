@@ -8,7 +8,6 @@ public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
-    private SpriteRenderer sr;
     private BoxCollider2D bc;
 
     [HideInInspector] internal float playerHealth = 100f;
@@ -18,7 +17,6 @@ public class PlayerLife : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>();
         bc = GetComponent<BoxCollider2D>();
     }
 
