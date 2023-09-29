@@ -5,6 +5,7 @@ using TMPro;
 
 public class scoreCalculate : MonoBehaviour
 {
+    //This script is used by bullets of player
     private GameObject player;
 
     private void Start()
@@ -13,13 +14,6 @@ public class scoreCalculate : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (collision.gameObject.CompareTag("Coin"))
-        {
-            player.GetComponent<displayScore>().playerScore = player.GetComponent<displayScore>().playerScore + 10;
-            
-        }
-
 
         if (collision.gameObject.CompareTag("Enemy"))
         {

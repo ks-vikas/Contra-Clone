@@ -13,4 +13,13 @@ public class displayScore : MonoBehaviour
     {
         scoreText.text = "SCORE: " + playerScore;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            playerScore += 10;
+            Destroy(collision.gameObject);
+        }
+    }
+
 }

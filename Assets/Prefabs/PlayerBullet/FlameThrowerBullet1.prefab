@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -4837144505719921440}
   - component: {fileID: -6898262707909684698}
   - component: {fileID: -6417537217221239530}
+  - component: {fileID: -3187497208665869843}
   m_Layer: 0
   m_Name: FlameThrowerBullet1
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1120378949
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 1251540352, guid: 450b9df920937714aaa967eebca6f4e0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -198,3 +199,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3187497208665869843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285631029671786596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075c54e0b22aeba43bd6d875aadcd2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
