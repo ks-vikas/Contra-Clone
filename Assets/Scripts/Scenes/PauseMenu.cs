@@ -8,10 +8,19 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool isPaused = false;
     [SerializeField] GameObject pauseMenuUI;
+    private GameObject player;
 
-
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
     void Update()
     {
+        if(player.GetComponent<PlayerLife>().playerLife <=0 )
+        {
+            SceneManager.LoadScene("EndGame");
+        }
+
      if (Input.GetKeyDown(KeyCode.P))
         {
             if (isPaused)
