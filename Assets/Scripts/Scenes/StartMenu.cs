@@ -24,6 +24,10 @@ public class StartMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Level3");
     }
+    public void Gamefinished()
+    {
+        SceneManager.LoadScene("EndGame");
+    }
     //quit the application by pressing the quit button
     public void QuitPlay()
     {
