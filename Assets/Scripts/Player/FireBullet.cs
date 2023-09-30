@@ -8,6 +8,7 @@ public class FireBullet : MonoBehaviour
     [SerializeField] private Transform fireSource;
     [SerializeField] private GameObject[] bullet;
     internal int currentBullet=0;
+    internal int BulletShotType = 0;
     private float ShotOffset = 0.5f;
 
         void Update()
@@ -19,14 +20,14 @@ public class FireBullet : MonoBehaviour
             Instantiate(bullet[currentBullet], fireSource.position, fireSource.rotation);
 
             //spread shot
-            if (currentBullet == 1 )
+            if (BulletShotType == 1 )
             {
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y + ShotOffset), fireSource.rotation);
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y - ShotOffset), fireSource.rotation);
             }
 
             //burst mode shot
-            if (currentBullet == 2)
+            if (BulletShotType == 2)
             {
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x - ShotOffset, fireSource.position.y), fireSource.rotation);
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x + ShotOffset, fireSource.position.y), fireSource.rotation);
@@ -39,7 +40,7 @@ public class FireBullet : MonoBehaviour
         if (Input.GetButton("Fire2"))
         {
             Instantiate(bullet[currentBullet], fireSource.position, fireSource.rotation);
-            if (currentBullet == 1)
+            if (BulletShotType == 1)
             {
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y + ShotOffset), fireSource.rotation);
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y - ShotOffset), fireSource.rotation);

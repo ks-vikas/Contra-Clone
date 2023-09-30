@@ -7,7 +7,10 @@ public class RifleRotation : MonoBehaviour
     private Camera mainCamera;
     [SerializeField] private GameObject player;
     private Animator anim;
-    private SpriteRenderer sr;
+    internal SpriteRenderer sr;
+    
+    [SerializeField] private Sprite[] guns;
+    internal int currentGun = 0;  //basic gun at 0 index
 
     private Vector3 mousePos;
     Vector3 rotate;
@@ -25,9 +28,15 @@ public class RifleRotation : MonoBehaviour
 
     void Update()
     {
+        changeGun();
         followMouse();
     }
 
+    private void changeGun()
+    {
+        Debug.Log("currentGun= "+currentGun);
+        sr.sprite = guns[currentGun];
+    }
     private void followMouse()
     {
         mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);

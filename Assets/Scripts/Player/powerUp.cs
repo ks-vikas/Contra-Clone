@@ -20,19 +20,13 @@ public class powerUp : MonoBehaviour
             if (gameObject.name == "powerUpBullet1")
             {
                 
-                player.GetComponent<FireBullet>().currentBullet = 1;
+                player.GetComponent<FireBullet>().BulletShotType = 1;
                 
             }
             if (gameObject.name == "powerUpBullet2")
             {
 
-                player.GetComponent<FireBullet>().currentBullet = 2;
-
-            }
-            if (gameObject.name == "powerUpBullet3")
-            {
-
-                player.GetComponent<FireBullet>().currentBullet = 3;
+                player.GetComponent<FireBullet>().BulletShotType = 2;
 
             }
             Destroy(gameObject);
