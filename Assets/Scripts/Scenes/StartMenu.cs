@@ -14,7 +14,7 @@ public class StartMenu : MonoBehaviour
 
     public void StartPlay1()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Level1");
     }
     public void StartPlay2()
     {

@@ -17,11 +17,15 @@ public class FireBullet : MonoBehaviour
         {
 
             Instantiate(bullet[currentBullet], fireSource.position, fireSource.rotation);
+
+            //spread shot
             if (currentBullet == 1 )
             {
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y + ShotOffset), fireSource.rotation);
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x, fireSource.position.y - ShotOffset), fireSource.rotation);
             }
+
+            //burst mode shot
             if (currentBullet == 2)
             {
                 Instantiate(bullet[currentBullet], new Vector2(fireSource.position.x - ShotOffset, fireSource.position.y), fireSource.rotation);
@@ -31,7 +35,7 @@ public class FireBullet : MonoBehaviour
 
         }
 
-        //fire in burst mode 
+        //fire in continous machine gun mode 
         if (Input.GetButton("Fire2"))
         {
             Instantiate(bullet[currentBullet], fireSource.position, fireSource.rotation);
