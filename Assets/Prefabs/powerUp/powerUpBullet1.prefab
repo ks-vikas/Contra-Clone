@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1115706293832363534}
   - component: {fileID: 5345486736171524779}
   - component: {fileID: 4394857409384716744}
-  - component: {fileID: 6418604313634718382}
+  - component: {fileID: 3560304139549586488}
   m_Layer: 7
   m_Name: powerUpBullet1
   m_TagString: Untagged
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a93223961b10542990b7faeed187f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!58 &6418604313634718382
-CircleCollider2D:
+--- !u!61 &3560304139549586488
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,6 +130,16 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.03933239}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.42, y: 2.84}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 0.08
+  m_Size: {x: 1.3029633, y: 1.5970974}
+  m_EdgeRadius: 0
