@@ -8,9 +8,6 @@ Submitted by-
 
 Bhuvnesh Kumar (2023MCS2011) and Vikas Kumar Saini (2023MCS2492) 
 
-***Score:***  
-![](score.png)
-
 1. **Problem Statement** 
 
 Implement the Contra game. Use Unity3D or the Unreal engine. 
