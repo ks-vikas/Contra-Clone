@@ -2,6 +2,8 @@
 
 # COP 701 ASSIGNMENT#2 - Contra Game 
 
+This is an assignment for course "Software Systems LAB" (COL 701) taken by Dr. Smruti Ranjan Sarangi (IIT Delhi).  
+
 Submitted by- 
 
 Bhuvnesh Kumar (2023MCS2011) and Vikas Kumar Saini (2023MCS2492) 
