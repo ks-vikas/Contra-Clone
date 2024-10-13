@@ -1,7 +1,7 @@
 ![](contraLogo.jpeg)
 
 # Gameplay
-[![Youtube link](thumbnail.JPG)](https://www.youtube.com/watch?v=[YOUTUBE_VIDEO_ID_HERE](https://youtu.be/Th5mRw0JlOA?si=LG7ibr70qZxhlbrg))
+[![Youtube link](thumbnail.JPG)](https://www.youtube.com/watch?v=https://youtu.be/Th5mRw0JlOA?si=LG7ibr70qZxhlbrg)
 
 # COP 701 ASSIGNMENT#2 - Contra Game 
 
