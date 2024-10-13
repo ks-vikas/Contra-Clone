@@ -1,4 +1,4 @@
-# Gameplay (Click the image below to watch the gameplay video.)
+# Gameplay (Click the image below to watch the gameplay video)
 [![Youtube link](thumbnail.jpg)](https://www.youtube.com/watch?v=Th5mRw0JlOA?si=hcuPD01-dDl38otc)
 
 <!--![](contraLogo.jpeg) -->
