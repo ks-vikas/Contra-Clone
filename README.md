@@ -1,5 +1,8 @@
 ![](contraLogo.jpeg)
 
+# Gameplay
+[![Youtube link](thumbnail.jpg)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://youtu.be/Th5mRw0JlOA?si=LG7ibr70qZxhlbrg))
+
 # COP 701 ASSIGNMENT#2 - Contra Game 
 
 This is an assignment for course "Software Systems LAB" conducted by Dr. Smruti Ranjan Sarangi (Sem 1, 2023, IIT Delhi).  
