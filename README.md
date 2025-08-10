@@ -6,8 +6,6 @@
 
 This is an assignment for course "Software Systems LAB" conducted by Dr. Smruti Ranjan Sarangi (Sem 1, 2023, IIT Delhi).  
 
-Submitted by: Bhuvnesh Kumar (2023MCS2011) and Vikas Kumar Saini (2023MCS2492) 
-
 ### **Problem Statement** 
 
 Implement the Contra game using Unity3D or the Unreal engine. 
